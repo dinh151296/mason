@@ -1,3 +1,12 @@
-let menuIcon = document.querySelector('.menu__item');
- let menuMobile = document.querySelector('.buttom-list');
+//menu mobile
+let menuIcon = document.querySelector('.burger');
+let menuMobile = document.querySelector('.wrap-menu__mobile');
 
+menuIcon.addEventListener('click', function() {
+    this.classList.toggle('active');
+    menuMobile.classList.toggle('show');
+
+    if (menuMobile.classList.contains('show')) {
+        document.querySelector('html').classList.add('hidden');
+    }
+});

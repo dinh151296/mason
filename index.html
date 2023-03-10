@@ -34,7 +34,7 @@
                             fill="#1C252C" />
                     </svg>
                     <p>
-                        Khoá cửa thông minh Mason - Mang sự tiện nghi và an toàn đến căn nhà của bạn - 087.688.1188
+                        <span>Khoá cửa thông minh Mason - Mang sự tiện nghi và an toàn đến căn nhà của bạn - </span> <a href="tel:087.688.1188">087.688.1188</a>
                     </p>
                 </div>
                 <div class="mason-login">
@@ -42,8 +42,13 @@
                 </div>
             </div>
         </div>
-        <div class="mason-bg buttom">
+        <div class="mason-bg buttom main-header">
             <div class="d-flex container">
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="buttom-list">
                     <ul class="list-menu-left">
                         <li><a href="">TRANG CHỦ</a></li>
@@ -81,7 +86,31 @@
                 </div>
             </div>
         </div>
-
+        <div class="wrap-menu__mobile">
+            <ul class="menu-mobile">
+                <li class="menu-mobile__item">
+                    <a href="index.html">TRANG CHỦ</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#">KHÓA CỬA VÂN TAY</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#">HÌNH ẢNH LẮP ĐẶT THỰC TẾ</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#">SHOP</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#">TIN TỨC CÔNG NGHỆ</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#">GIỚI THIỆU MASON</a>
+                </li>
+                <li class="menu-mobile__item">
+                    <a href="#">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <!-- end header -->
 
@@ -318,7 +347,7 @@
                                         <div class="right-text-buttom">
                                             <div class="right-text-quantity">
                                                 <button type="submit">-</button>
-                                                <input type="number" name="" id="number" placeholder="1">
+                                                <input type="text" name="" id="number" placeholder="1">
                                                 <button type="submit">+</button>
                                             </div>
                                             <div class="right-text-cart">
@@ -1003,8 +1032,6 @@
                 disableOnInteraction: false
             },
 
-
-
             // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
@@ -1012,23 +1039,28 @@
             },
             breakpoints: {
                 1400: {
-                    slidesPerView: 5
+                    slidesPerView: 5,
+                    spaceBetween: 16,
                 },
                 1300: {
                     slidesPerView: 4
                 },
                 1024: {
-                    slidesPerView: 4
+                    slidesPerView: 4,
+                    spaceBetween: 10
                 },
 
                 800: {
-                    slidesPerView: 3
+                    slidesPerView: 3,
+                    spaceBetween: 10
                 },
                 500: {
-                    slidesPerView: 3
+                    slidesPerView: 3,
+                    spaceBetween: 10
                 },
                 320: {
-                    slidesPerView: 2
+                    slidesPerView: 2,
+                    spaceBetween: 10
                 },
 
             }
