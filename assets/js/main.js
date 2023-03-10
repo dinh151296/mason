@@ -8,5 +8,7 @@ menuIcon.addEventListener('click', function() {
 
     if (menuMobile.classList.contains('show')) {
         document.querySelector('html').classList.add('hidden');
+    }else {
+        document.querySelector('html').classList.remove('hidden');
     }
 });
